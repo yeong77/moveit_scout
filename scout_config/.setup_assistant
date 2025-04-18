@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: scout_description
+    relative_path: urdf/scout_mini.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/scout_mini.srdf
+  CONFIG:
+    author_name: yeong77
+    author_email: choiye1122@naver.com
+    generated_timestamp: 1743490970

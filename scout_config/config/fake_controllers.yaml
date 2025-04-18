@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_scout_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - virtual_joint
+initial:  # Define initial robot poses.
+#  - group: scout_group
+#    pose: home
+
+  []

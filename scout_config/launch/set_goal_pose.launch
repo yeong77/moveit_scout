@@ -1,0 +1,20 @@
+<launch>
+  <arg name="start_x" default="1.768"/>
+  <arg name="start_y" default="3.915"/>
+  <arg name="start_yaw" default="-1.186"/>
+
+  <arg name="goal_x" default="5.0"/>
+  <arg name="goal_y" default="5.0"/>
+  <arg name="goal_yaw" default="0.037"/>
+
+
+  <node name="moveit_set_goal_pose_cpp" pkg="scout_config" type="moveit_set_goal_pose_cpp" output="screen">
+    <param name="start_x" value="$(arg start_x)"/>
+    <param name="start_y" value="$(arg start_y)"/>
+    <param name="start_yaw" value="$(arg start_yaw)"/>
+    <param name="goal_x" value="$(arg goal_x)"/>
+    <param name="goal_y" value="$(arg goal_y)"/>
+    <param name="goal_yaw" value="$(arg goal_yaw)"/>
+  </node>
+</launch>
+
